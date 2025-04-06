@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "vercel": {
+      "command": "npx",
+      "args": ["vercel-mcp VERCEL_API_KEY=<FaKgDKknTSvMbGBbLyyKy8KG>"]
+    }
+  },
+  "railway": {
+    "command": "npx",
+    "args": ["-y", "@jasontanswe/railway-mcp"],
+    "env": {
+      "RAILWAY_API_TOKEN": "fe6b6956-312d-466c-b0fb-c38702b8722d"
+    }
+  },
+  "brave-search": {
+    "command": "uv",
+    "args": [
+      "--directory",
+      "path-to\\mcp-python\\brave-mcp-search\\src",
+      "run",
+      "server.py"
+    ],
+    "env": {
+      "BRAVE_API_KEY": "BSAq31MKHI8NrBh38JSs-uhJtbZ3SvG"
+    }
+  }
+}

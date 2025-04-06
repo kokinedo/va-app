@@ -1,0 +1,38 @@
+{
+  "name": "public-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3002 --turbo",
+    "build": "next build",
+    "start": "next start --port 3002",
+    "analyze": "BUNDLE_ANALYZE=both next build",
+    "clean": "git clean -xdf .cache .next .turbo build dist node_modules",
+    "format": "prettier --check \"**/*.{js,cjs,mjs,ts,tsx,mdx}\"",
+    "format:fix": "prettier --write \"**/*.{js,cjs,mjs,ts,tsx,mdx}\"",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint --fix .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@workspace/api-keys": "workspace:*",
+    "@workspace/common": "workspace:*",
+    "@workspace/database": "workspace:*",
+    "next": "15.2.1",
+    "next-swagger-doc": "0.4.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "swagger-ui-react": "5.20.0"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "15.2.1",
+    "@types/node": "22.13.9",
+    "@types/react": "19.0.10",
+    "@types/react-dom": "19.0.4",
+    "@types/swagger-ui-react": "5.18.0",
+    "@workspace/eslint-config": "workspace:*",
+    "@workspace/prettier-config": "workspace:*",
+    "@workspace/typescript-config": "workspace:*"
+  },
+  "prettier": "@workspace/prettier-config"
+}
