@@ -60,6 +60,7 @@ export const routes = {
       slug: {
         Contacts: `${baseUrl.Dashboard}/organizations/[slug]/contacts`,
         Home: `${baseUrl.Dashboard}/organizations/[slug]/home`,
+        Tasks: `${baseUrl.Dashboard}/organizations/[slug]/tasks`,
         Index: `${baseUrl.Dashboard}/organizations/[slug]`,
         settings: {
           account: {

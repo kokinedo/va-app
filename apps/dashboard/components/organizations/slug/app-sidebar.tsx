@@ -19,6 +19,13 @@ import { OrganizationSwitcher } from '~/components/organizations/slug/organizati
 import type { FavoriteDto } from '~/types/dtos/favorite-dto';
 import type { OrganizationDto } from '~/types/dtos/organization-dto';
 import type { ProfileDto } from '~/types/dtos/profile-dto';
+import { 
+  BarChartIcon, 
+  ContactIcon, 
+  StarIcon, 
+  ClipboardListIcon,
+  BellIcon
+} from 'lucide-react';
 
 export type AppSidebarProps = {
   organizations: OrganizationDto[];

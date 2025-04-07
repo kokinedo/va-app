@@ -1,6 +1,7 @@
 import {
   BellIcon,
   CodeIcon,
+  ClipboardListIcon,
   CreditCardIcon,
   HomeIcon,
   LockKeyholeIcon,
@@ -28,6 +29,11 @@ export function createMainNavItems(slug: string): NavItem[] {
       title: 'Home',
       href: replaceOrgSlug(routes.dashboard.organizations.slug.Home, slug),
       icon: HomeIcon
+    },
+    {
+      title: 'Tasks',
+      href: replaceOrgSlug(routes.dashboard.organizations.slug.Tasks, slug),
+      icon: ClipboardListIcon
     },
     {
       title: 'Contacts',
